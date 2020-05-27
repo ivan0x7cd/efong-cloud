@@ -1,5 +1,4 @@
 package com.efong.zuul.controller;
-
 import com.efong.framework.utils.Message;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

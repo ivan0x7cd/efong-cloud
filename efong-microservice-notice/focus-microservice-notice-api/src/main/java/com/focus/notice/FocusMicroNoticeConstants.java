@@ -1,4 +1,4 @@
-package com.focus.notice;
+package com.efong.notice;
 
 public class FocusMicroNoticeConstants {
 

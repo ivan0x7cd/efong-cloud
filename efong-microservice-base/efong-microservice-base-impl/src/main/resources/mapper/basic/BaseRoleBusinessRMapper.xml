@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.focus.base.mapper.basic.BaseRoleBusinessRMapper" >
-  <resultMap id="BaseResultMap" type="com.focus.base.domain.basic.BaseRoleBusinessR" >
+<mapper namespace="com.efong.base.mapper.basic.BaseRoleBusinessRMapper" >
+  <resultMap id="BaseResultMap" type="com.efong.base.domain.basic.BaseRoleBusinessR" >
     <id column="ID" property="id" jdbcType="VARCHAR" />
     <result column="ROLE_ID" property="roleId" jdbcType="VARCHAR" />
     <result column="CLASS_PK" property="classPk" jdbcType="VARCHAR" />
@@ -11,13 +11,13 @@
     delete from base_role_business_r
     where ID = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.focus.base.domain.basic.BaseRoleBusinessR" >
+  <insert id="insert" parameterType="com.efong.base.domain.basic.BaseRoleBusinessR" >
     insert into base_role_business_r (ID, ROLE_ID, CLASS_PK, 
       CLASS_NAME)
     values (#{id,jdbcType=VARCHAR}, #{roleId,jdbcType=VARCHAR}, #{classPk,jdbcType=VARCHAR}, 
       #{className,jdbcType=VARCHAR})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.focus.base.domain.basic.BaseRoleBusinessR" >
+  <update id="updateByPrimaryKey" parameterType="com.efong.base.domain.basic.BaseRoleBusinessR" >
     update base_role_business_r
     set ROLE_ID = #{roleId,jdbcType=VARCHAR},
       CLASS_PK = #{classPk,jdbcType=VARCHAR},

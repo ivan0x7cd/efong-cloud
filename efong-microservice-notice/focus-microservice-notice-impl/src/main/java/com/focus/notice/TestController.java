@@ -1,6 +1,6 @@
-package com.focus.notice;
+package com.efong.notice;
 
-import com.focus.notice.vm.Testt;
+import com.efong.notice.vm.Testt;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.bind.annotation.GetMapping;

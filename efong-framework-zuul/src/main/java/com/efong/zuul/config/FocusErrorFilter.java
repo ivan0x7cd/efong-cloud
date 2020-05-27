@@ -1,21 +1,16 @@
 package com.efong.zuul.config;
-
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.netflix.ribbon.RibbonHttpResponse;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StreamUtils;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.ERROR_TYPE;
-import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.POST_TYPE;
 
 /**
  * 本想用来做下游服务统一的异常处理，后发现springboot 如果出异常默认进入error接口，到不了zuul，需继承ErrorController或单独异常拦截。

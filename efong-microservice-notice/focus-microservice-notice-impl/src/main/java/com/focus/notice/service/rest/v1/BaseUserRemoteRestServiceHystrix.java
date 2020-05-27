@@ -1,6 +1,6 @@
-package com.focus.notice.service.rest.v1;
+package com.efong.notice.service.rest.v1;
 
-import com.focus.base.api.v1.hystrix.BaseUserRestServiceHystrix;
+import com.efong.base.api.v1.hystrix.BaseUserRestServiceHystrix;
 import org.springframework.stereotype.Component;
 
 //@Component

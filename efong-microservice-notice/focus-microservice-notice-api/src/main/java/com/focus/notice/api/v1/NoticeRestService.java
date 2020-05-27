@@ -1,6 +1,6 @@
-package com.focus.notice.api.v1;
+package com.efong.notice.api.v1;
 
-import com.focus.notice.FocusMicroNoticeConstants;
+import com.efong.notice.FocusMicroNoticeConstants;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

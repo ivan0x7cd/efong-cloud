@@ -1,4 +1,4 @@
-package com.focus.notice.service;
+package com.efong.notice.service;
 
 public class NoticeService {
 }

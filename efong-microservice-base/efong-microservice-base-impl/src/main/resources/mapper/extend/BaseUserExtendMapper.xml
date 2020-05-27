@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.focus.base.mapper.extend.BaseUserExtendMapper" >
-  <resultMap id="BaseResultMap" type="com.focus.base.domain.basic.BaseUser" >
+<mapper namespace="com.efong.base.mapper.extend.BaseUserExtendMapper" >
+  <resultMap id="BaseResultMap" type="com.efong.base.domain.basic.BaseUser" >
     <id column="ID" property="id" jdbcType="VARCHAR" />
     <result column="USER_TYPE" property="userType" jdbcType="TINYINT" />
     <result column="LOGIN_NAME" property="loginName" jdbcType="VARCHAR" />
@@ -28,7 +28,7 @@
     where  LOGIN_NAME = #{loginName,jdbcType=VARCHAR}
   </select>
 
-  <resultMap id="UserListResultMap" type="com.focus.base.domain.extend.ListBaseUser" >
+  <resultMap id="UserListResultMap" type="com.efong.base.domain.extend.ListBaseUser" >
     <id column="ID" property="id" jdbcType="VARCHAR" />
     <result column="LOGIN_NAME" property="loginName" jdbcType="VARCHAR" />
     <result column="NICK_NAME" property="nickName" jdbcType="VARCHAR" />

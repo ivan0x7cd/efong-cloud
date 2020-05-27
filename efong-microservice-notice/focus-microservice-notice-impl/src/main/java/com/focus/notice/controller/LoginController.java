@@ -1,7 +1,7 @@
-package com.focus.notice.controller;
+package com.efong.notice.controller;
 
-import com.focus.base.api.v1.BaseLoginRestService;
-import com.focus.base.api.v1.BaseUserRestService;
+import com.efong.base.api.v1.BaseLoginRestService;
+import com.efong.base.api.v1.BaseUserRestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

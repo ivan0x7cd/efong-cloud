@@ -1,10 +1,10 @@
-package com.focus.notice.controller;
+package com.efong.notice.controller;
 
-import com.focus.base.api.v1.BaseAuthorityRestService;
-import com.focus.base.api.v1.BaseUserRestService;
-import com.focus.framework.utils.SpringUtil;
-import com.focus.notice.api.v1.NoticeRestService;
-import com.focus.notice.service.rest.v1.BaseUserRemoteRestService;
+import com.efong.base.api.v1.BaseAuthorityRestService;
+import com.efong.base.api.v1.BaseUserRestService;
+import com.efong.framework.utils.SpringUtil;
+import com.efong.notice.api.v1.NoticeRestService;
+import com.efong.notice.service.rest.v1.BaseUserRemoteRestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 

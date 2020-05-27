@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.focus.base.mapper.basic.BaseResourceMapper" >
-  <resultMap id="BaseResultMap" type="com.focus.base.domain.basic.BaseResource" >
+<mapper namespace="com.efong.base.mapper.basic.BaseResourceMapper" >
+  <resultMap id="BaseResultMap" type="com.efong.base.domain.basic.BaseResource" >
     <id column="ID" property="id" jdbcType="VARCHAR" />
     <result column="NAME" property="name" jdbcType="VARCHAR" />
     <result column="TYPE" property="type" jdbcType="TINYINT" />
@@ -20,7 +20,7 @@
     delete from base_resource
     where ID = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.focus.base.domain.basic.BaseResource" >
+  <insert id="insert" parameterType="com.efong.base.domain.basic.BaseResource" >
     insert into base_resource (ID, NAME, TYPE, 
       CODE, PID, PATH, SORT, 
       DES, MENU_ROUTE, CREAT_USER, 
@@ -32,7 +32,7 @@
       #{creatDate,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}
       )
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.focus.base.domain.basic.BaseResource" >
+  <update id="updateByPrimaryKey" parameterType="com.efong.base.domain.basic.BaseResource" >
     update base_resource
     set NAME = #{name,jdbcType=VARCHAR},
       TYPE = #{type,jdbcType=TINYINT},

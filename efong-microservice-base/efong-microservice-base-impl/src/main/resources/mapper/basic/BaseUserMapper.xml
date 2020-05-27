@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.focus.base.mapper.basic.BaseUserMapper" >
-  <resultMap id="BaseResultMap" type="com.focus.base.domain.basic.BaseUser" >
+<mapper namespace="com.efong.base.mapper.basic.BaseUserMapper" >
+  <resultMap id="BaseResultMap" type="com.efong.base.domain.basic.BaseUser" >
     <id column="ID" property="id" jdbcType="VARCHAR" />
     <result column="USER_TYPE" property="userType" jdbcType="TINYINT" />
     <result column="LOGIN_NAME" property="loginName" jdbcType="VARCHAR" />
@@ -24,7 +24,7 @@
     delete from base_user
     where ID = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.focus.base.domain.basic.BaseUser" >
+  <insert id="insert" parameterType="com.efong.base.domain.basic.BaseUser" >
     insert into base_user (ID, USER_TYPE, LOGIN_NAME, 
       REAL_NAME, NICK_NAME, PASSWORD, 
       IMAGE_ID, SUPERMAN, PHONE_NUMBER, 
@@ -39,7 +39,7 @@
       #{sex,jdbcType=BIT},#{status,jdbcType=VARCHAR}
       )
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.focus.base.domain.basic.BaseUser" >
+  <update id="updateByPrimaryKey" parameterType="com.efong.base.domain.basic.BaseUser" >
     update base_user
     set USER_TYPE = #{userType,jdbcType=TINYINT},
       LOGIN_NAME = #{loginName,jdbcType=VARCHAR},

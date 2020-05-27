@@ -12,10 +12,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * 1、当应用中存在Config.class时配置
+ * 2、@EnableConfigurationPropertie 将指定带有@ConfigurationProperties注解的类 注入到spring容器中
+ */
 @Configuration
-//当应用中存在Config.class时配置
 @ConditionalOnClass(Config.class)
-//@EnableConfigurationPropertie 将指定带有@ConfigurationProperties注解的类 注入到spring容器中
 @EnableConfigurationProperties(RedissonProperties.class)
 public class RedissonAutoConfiguration {
 

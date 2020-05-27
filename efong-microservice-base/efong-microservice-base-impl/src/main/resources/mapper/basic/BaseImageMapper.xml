@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.focus.base.mapper.basic.BaseImageMapper" >
-  <resultMap id="BaseResultMap" type="com.focus.base.domain.basic.BaseImage" >
+<mapper namespace="com.efong.base.mapper.basic.BaseImageMapper" >
+  <resultMap id="BaseResultMap" type="com.efong.base.domain.basic.BaseImage" >
     <id column="ID" property="id" jdbcType="VARCHAR" />
     <result column="URL" property="url" jdbcType="VARCHAR" />
     <result column="REMARK" property="remark" jdbcType="VARCHAR" />
@@ -12,13 +12,13 @@
     delete from base_image
     where ID = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.focus.base.domain.basic.BaseImage" >
+  <insert id="insert" parameterType="com.efong.base.domain.basic.BaseImage" >
     insert into base_image (ID, URL, REMARK, 
       CREAT_USER, CREAT_DATE)
     values (#{id,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
       #{creatUser,jdbcType=VARCHAR}, #{creatDate,jdbcType=TIMESTAMP})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.focus.base.domain.basic.BaseImage" >
+  <update id="updateByPrimaryKey" parameterType="com.efong.base.domain.basic.BaseImage" >
     update base_image
     set URL = #{url,jdbcType=VARCHAR},
       REMARK = #{remark,jdbcType=VARCHAR},
